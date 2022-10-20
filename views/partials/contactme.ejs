@@ -1,0 +1,56 @@
+<div class="container" id="contactContain">
+    <div class="contact-block1">
+        <div class="row">
+            <div class="col-lg-6">
+                <div>
+                    <h2 class="fas fa-regular fa-text-size">Want to know more ?</h2>
+                    <h6 id="aboutPad">Fill the short form!</h6>
+                    <ul class="contact-details" id="aboutPad">
+                        <li><i class="fas fa-thin fa-arrow-right" id="bullet"></i><span>Harsimarjit Singh Badding</span></li>
+                        <li><i class="fas fa-thin fa-arrow-right" id="bullet"></i><span>48 camberley Court, Scarborough, Ontario</span></li>
+                        <li><i class="fas fa-thin fa-arrow-right" id="bullet"></i><span>simarbadding@gmail.com</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <form action="/home" method="redirect" role="form">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group contact-block1">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                    data-rule="minlen:6" data-msg="Please enter at least 4 chars" />
+                                <div class="validate"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validate"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="subject" id="subject"
+                                    placeholder="Subject" data-rule="minlen:4"
+                                    data-msg="Please enter at least 8 chars of subject" />
+                                <div class="validate"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" rows="12" data-rule="required"
+                                    data-msg="Please write your enquires here."
+                                    placeholder="Please write your enquires here."></textarea>
+                                <div class="validate"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <input type="submit" class="btn btn-dark btn-send" value="Send message">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

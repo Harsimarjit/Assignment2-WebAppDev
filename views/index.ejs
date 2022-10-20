@@ -1,0 +1,40 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+  
+
+  <!-- Main Content -->
+
+  <!--About Me Page-->
+  <% if (title == "Home"){ %>
+    <%- include partials/home_mission.ejs %>
+  <% } %>
+
+  <!--About Me Page-->
+  <% if (title == "About"){ %>
+    <%- include partials/about.ejs %>
+  <% } %>
+
+  <!--Projects Page-->
+  <% if (title == "Projects"){ %>
+    <%- include partials/projects.ejs %>
+  <% } %>  
+
+  <!--Services Page-->
+  <% if (title == "Services"){ %>
+    <%- include partials/services.ejs %>
+  <% } %>
+  
+  <!--Contact Me Page-->
+  <% if (title == "Contact Me"){ %>
+    <%- include partials/contactme.ejs %>
+  <% } %>  
+
+<%- include partials/bottom_nav.ejs %>  
+
+<%- include partials/footer.ejs %>
+  
+
+
+
+
