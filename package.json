@@ -1,5 +1,5 @@
 {
-  "name": "comp229-f2020-week3",
+  "name": "webdevassignment2",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -41,10 +41,11 @@
     "type": "git",
     "url": "git+https://github.com/Harsimarjit/Assignment2-WebAppDev.git"
   },
-  "author": "Tom Tsiliopoulos",
+  "author": "Harsimarjit Singh",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Harsimarjit/Assignment2-WebAppDev.git"
   },
-  "homepage": "https://github.com/Harsimarjit/Assignment2-WebAppDev.git"
+  "homepage": "https://github.com/Harsimarjit/Assignment2-WebAppDev.git",
+  "devDependencies": {}
 }
