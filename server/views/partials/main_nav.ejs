@@ -2,9 +2,9 @@
 <nav class="navbar navbar-expand-lg navbar-dark" id="navBar">
   <div class="container">
     <div>
-      <a class="navbar-brand" href="/">
-        <img src="Assets\images\logo.png" class="logo" alt="Icon">
-      </a>
+        <a class="navbar-brand" href="/">
+          <img src="Assets\images\logo.png" class="logo" onerror="this.style.display='none'"/>
+        </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -45,13 +45,31 @@
                     <a class="nav-link" href="/services"><i class="fas fa-cogs"></i> Services </a>
                 </li>
 
+                <% if (title=="Contacts" ) { %>
+                  <li class="nav-item active">
+                    <% } else { %>
+                  <li class="nav-item">
+                    <% } %>
+                      <a class="nav-link" href="/contact-list"><i class="fas fa-solid fa-address-book"></i> Contacts List </a>
+                  </li>
+
                 <% if (title=="Contact Me" ) { %>
                   <li class="nav-item active">
                     <% } else { %>
                   <li class="nav-item">
                     <% } %>
-                      <a class="nav-link" href="/contact"><i class="fas fa-mobile-alt"></i> Contact </a>
+                      <a class="nav-link" href="/contact"><i class="fas fa-mobile-alt"></i> Contact Me </a>
                   </li>
+
+                  <% if(typeof displayName == 'string' && displayName) { %>
+                    <li class="navbar-text"><i class="fas fa-lg fa-user"></i> Welcome, <%= displayName %></li>
+                    <li class="nav-item"><a href="/logout" class="nav-link">
+                      <i class="fas fa-lg fa-sign-out-alt"></i> Logout</a></li>
+                  <% } else { %>
+                    <li class="nav-item"><a href="/login" class="nav-link">
+                      <i class="fas fa-lg fa-sign-in-alt"></i> Login</a></li>
+                  <% } %>
+
     </div>
   </div>
 </nav>
