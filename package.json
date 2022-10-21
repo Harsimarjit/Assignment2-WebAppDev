@@ -39,12 +39,12 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Harsimarjit/Assignment1-WebAppDev.git"
+    "url": "git+https://github.com/Harsimarjit/Assignment2-WebAppDev.git"
   },
   "author": "Tom Tsiliopoulos",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Harsimarjit/Assignment1-WebAppDev.git"
+    "url": "https://github.com/Harsimarjit/Assignment2-WebAppDev.git"
   },
-  "homepage": "https://github.com/Harsimarjit/Assignment1-WebAppDev.git"
+  "homepage": "https://github.com/Harsimarjit/Assignment2-WebAppDev.git"
 }
